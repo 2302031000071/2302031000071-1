@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.header
+{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #000000;
+    font-weight: 900;
+    background-color:white;
+}
+
+.logo
+{
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact ul{
+    
+    width: 40vw;
+    height: 50vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.contact ul li a{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #000000;
+}
+.header_2{
+    position: relative;
+}
+.header_text{
+    position: absolute;
+    bottom:  3rem;
+    right: 16px;
+    font-size: xx-large;
+    font-weight: 1000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         color: #000000;
+
+}
+.header_text2{
+    position: absolute;
+    width: 40vw;
+    top: .5rem;
+    right: 16px;
+    font-size: small;
+    color: #f2af29;
+
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+.header_2 img{
+    width: 100vw;
+    height: 80vh;
+}
+.importance{
+    width: 100vw;
+}
+.importance1{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 5vh;
+    display:flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+    align-items: center;
+    color: #f2af29;
+  
+}
+.importance2{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 10vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    color: #000000;
+
+
+  
+}
+.contact_detail_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_detail{
+    
+    width: 40vw;
+    height: 90vh;
+    margin-top: 2rem;
+    border-radius: .5rem;
+    background-color: #f2af29;
+}
+.contact_detail h1{
+    margin-left: 9rem;
+
+
+}
+#input1{
+    display: inline-block;
+    width: 20vw;
+    height: 5vh;
+    margin-left: 8rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+
+}
+.work_text_button{
+display: flex;
+align-content: center;
+justify-content: center;
+margin-top: 1rem;
+
+        }
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  border-radius: 2rem;
+  font-size: 20px;
+  width: 20vw;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+        .button2:hover {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            background-color: #000000;
+            color: white;
+}
+
+.button2 {
+    background-color: #f2af29;
+    color: white;
+ 
+}
+
+.button3:hover {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            background-color: #f2af29;
+            color: white;
+}
+
+.button3 {
+    background-color: #000000;
+    color: white;
+ 
+}
+
+.footer{
+    position: relative;
+    margin-top: 5rem;
+    background-image: url(dw.webp);
+    background-color: black;
+      height: 400px;
+      width: 500px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    
+    
+}
+.footer_img img{
+    width: 100vw;
+    height: 100vh;
+
+}
+.footer_text{
+            display: block;
+            justify-content: space-between;
+            
+
+
+}
+.footer_1{
+           width: 30vw;
+
+           position: absolute;
+           top: 12rem;
+            left: 10rem;
+
+            font-size: large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+}
+
+       
+.footer_1 ul{
+            
+            width: 40vw;
+            height: 50vh;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: inline-block;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+        }
+        .footer_1 ul li a{
+            width: 8vw;
+
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            text-decoration: none;
+            color: white;
+        }
+.footer_2 {
+            width: 60vw;
+            bottom:  0.5rem;
+            left: 25rem; 
+            position: absolute;
+            font-size: large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+}
+.footer_input_email input{
+    width: 20vw;
+    height: 9vh;
+    background-color: #f2af29;
+    border: 2px solid #f2af29;
+
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    padding-left: 1rem;
+  border-radius: 2rem;
+
+            
+
+}
+.footer_input_email{
+
+            top:8rem;
+            left: 59rem; 
+            position: absolute;
+
+}
+.footer_button{
+            top:13rem;
+            left: 59rem; 
+            position: absolute;
+
+
+}
+.footer_1 h5{
+    margin-top: 10px;
+}
+.footer_2 h5{
+    margin-top: 10px;
+}
+
+
+       
+        
+        
+
+       
+
+        
+</style>
+<body>
+    <section>
+
+        <div class="header">
+            <div class="logo">
+                <h1>Vuttu
+                    <i class="fa-solid fa-shield-dog"></i>
+                </h1>
+            </div>
+            <div class="contact">
+            <ul>
+                
+    
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dog.html">Dog</a></li>
+                <li><a href="about_us.html">Our facility</a></li>
+
+                <li><a href="adpot.html">Adoption</a></li>
+                <li><a href="dog.html">Breeder</a></li>
+                <li><a href="contact.html">Contact</a></li>
+    
+                
+    
+            </ul>
+        </div>
+    
+        </div>
+        </section>
+        <hr>
+
+
+        <div class="contact_detail_main">
+
+
+
+        <div class="contact_detail">
+            <h1>Contact Detail</h1>
+            <input id="input1" type="text" placeholder="First Name">
+            <input id="input1" type="text" placeholder="Last Name">
+            <input id="input1" type="text" placeholder="Email">
+            <input id="input1" type="number" placeholder="Phone">
+            <input id="input1" type="text" placeholder="Note:">
+
+            <div class="work_text_button">
+                <button class="button button3">Submit</button>
+            </div>
+
+        </div>
+    </div>
+    
+    
+    <div class="footer">
+        <div class="footer_img">
+        <img src="dw.webp" alt="">
+    </div>
+    <div class="footer_text">
+        <div class="footer_1">
+            <h2>Useful Links</h2>
+
+            <ul>
+                
+    
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dog.html">Dog</a></li>
+                <li><a href="about_us.html">Our facility</a></li>
+                <li><a href="adpot.html">Adoption</a></li>
+                <li><a href="dog.html">Breeder</a></li>
+                <li><a href="contact.html">Contact</a></li>
+    
+                
+    
+            </ul>
+
+
+
+        </div>
+
+
+        
+        <div class="footer_2">
+            <h2>Our Causes</h2>
+            <h5>- Donate A Bed For Injured And Stray Animals</h5>
+            <h5>- Care for Cows, Protect the Sacred</h5>
+            <h5>- Contribute for a large ambulance to rescue Injured and Needy Animals</h5>
+            <h5>- Contribute For The ongoing cost of AMTM Trained 
+                Team of Medical Care and Animal Caretakers</h5>
+            <h5>- Neuter Today, Save Tomorrow</h5>
+            <h5>- Help Us Give A Second Chance To Hundreds Of Injured and Sick Stray Animals</h5>
+        </div>
+        <div class="footer_input_email">
+            <input type="text" id="lname" name="lastname" placeholder="Enter email">
+        </div>
+        <div class="footer_button">
+                <button class="button button2"> Subscribe Now</button>
+    
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>
